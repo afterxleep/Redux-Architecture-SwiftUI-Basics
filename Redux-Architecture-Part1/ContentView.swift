@@ -8,8 +8,16 @@
 import SwiftUI
 
 struct ContentView: View {
+    let store = AppStore(initialState: .init(),
+                         reducer: appReducer)
+    
+    init() {
+        store.dispatch(.getAnimal)
+    }
+    
     var body: some View {
-        Text("Hello, world!").padding()
+        AnimalView()
+            .environmentObject(store)
     }
 }
 
