@@ -1,4 +1,4 @@
-# Redux Architecture on iOS.  (Part 1)
+# Redux Architecture on iOS (Part 1)
 
 This is the companion app to the Redux Architecture on SwitUI tutorial available at.  
 https://danielbernal.co/redux-like-architecture-with-swiftui-part1/
