@@ -10,6 +10,5 @@ What we did in the first part.:
 - SwiftUI bindings to the AppState via Observable Object
 
 ---
-Checkout other branches for specific tutorial sections.
 
  
