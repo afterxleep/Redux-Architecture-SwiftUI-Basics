@@ -8,5 +8,9 @@
 import Foundation
 
 struct AppState {
+    var animal: AnimalState
+}
+
+struct AnimalState {
     var currentAnimal: String = ""
 }

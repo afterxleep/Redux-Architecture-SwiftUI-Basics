@@ -14,8 +14,13 @@
 		D61C8E5D24D390B50021C2C7 /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = D61C8E5C24D390B50021C2C7 /* AppState.swift */; };
 		D61C8E5F24D390CE0021C2C7 /* AppStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = D61C8E5E24D390CE0021C2C7 /* AppStore.swift */; };
 		D61C8E6124D390E30021C2C7 /* AppAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = D61C8E6024D390E30021C2C7 /* AppAction.swift */; };
-		D61C8E6324D390F30021C2C7 /* Reducers.swift in Sources */ = {isa = PBXBuildFile; fileRef = D61C8E6224D390F30021C2C7 /* Reducers.swift */; };
+		D61C8E6324D390F30021C2C7 /* AppReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D61C8E6224D390F30021C2C7 /* AppReducer.swift */; };
 		D61C8E6524D3911D0021C2C7 /* AnimalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D61C8E6424D3911D0021C2C7 /* AnimalView.swift */; };
+		D621EC8E24D785E8004B5E35 /* LogMiddleware.swift in Sources */ = {isa = PBXBuildFile; fileRef = D621EC8D24D785E8004B5E35 /* LogMiddleware.swift */; };
+		D62538CE24D6984C001AFA26 /* AnimalAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = D62538CD24D6984C001AFA26 /* AnimalAction.swift */; };
+		D62538D024D69866001AFA26 /* AnimalReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D62538CF24D69866001AFA26 /* AnimalReducer.swift */; };
+		D62538D624D700F0001AFA26 /* AnimalService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D62538D524D700F0001AFA26 /* AnimalService.swift */; };
+		D62538D824D70127001AFA26 /* AnimalMiddleware.swift in Sources */ = {isa = PBXBuildFile; fileRef = D62538D724D70127001AFA26 /* AnimalMiddleware.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,8 +33,13 @@
 		D61C8E5C24D390B50021C2C7 /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
 		D61C8E5E24D390CE0021C2C7 /* AppStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStore.swift; sourceTree = "<group>"; };
 		D61C8E6024D390E30021C2C7 /* AppAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppAction.swift; sourceTree = "<group>"; };
-		D61C8E6224D390F30021C2C7 /* Reducers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reducers.swift; sourceTree = "<group>"; };
+		D61C8E6224D390F30021C2C7 /* AppReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppReducer.swift; sourceTree = "<group>"; };
 		D61C8E6424D3911D0021C2C7 /* AnimalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalView.swift; sourceTree = "<group>"; };
+		D621EC8D24D785E8004B5E35 /* LogMiddleware.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogMiddleware.swift; sourceTree = "<group>"; };
+		D62538CD24D6984C001AFA26 /* AnimalAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalAction.swift; sourceTree = "<group>"; };
+		D62538CF24D69866001AFA26 /* AnimalReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalReducer.swift; sourceTree = "<group>"; };
+		D62538D524D700F0001AFA26 /* AnimalService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalService.swift; sourceTree = "<group>"; };
+		D62538D724D70127001AFA26 /* AnimalMiddleware.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalMiddleware.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,16 +72,16 @@
 		D61C8E4C24D390910021C2C7 /* Redux-Architecture */ = {
 			isa = PBXGroup;
 			children = (
+				D62538D124D700A3001AFA26 /* Middleware */,
+				D62538D424D700E0001AFA26 /* Services */,
+				D62538C924D697A0001AFA26 /* App */,
+				D62538CA24D697F8001AFA26 /* Actions */,
+				D62538CB24D69803001AFA26 /* Reducers */,
+				D62538CC24D69810001AFA26 /* View */,
 				D61C8E4D24D390910021C2C7 /* Redux_Architecture.swift */,
-				D61C8E4F24D390910021C2C7 /* ContentView.swift */,
 				D61C8E5124D390940021C2C7 /* Assets.xcassets */,
 				D61C8E5624D390940021C2C7 /* Info.plist */,
 				D61C8E5324D390940021C2C7 /* Preview Content */,
-				D61C8E5C24D390B50021C2C7 /* AppState.swift */,
-				D61C8E5E24D390CE0021C2C7 /* AppStore.swift */,
-				D61C8E6024D390E30021C2C7 /* AppAction.swift */,
-				D61C8E6224D390F30021C2C7 /* Reducers.swift */,
-				D61C8E6424D3911D0021C2C7 /* AnimalView.swift */,
 			);
 			path = "Redux-Architecture";
 			sourceTree = "<group>";
@@ -82,6 +92,59 @@
 				D61C8E5424D390940021C2C7 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		D62538C924D697A0001AFA26 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				D61C8E5C24D390B50021C2C7 /* AppState.swift */,
+				D61C8E5E24D390CE0021C2C7 /* AppStore.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		D62538CA24D697F8001AFA26 /* Actions */ = {
+			isa = PBXGroup;
+			children = (
+				D61C8E6024D390E30021C2C7 /* AppAction.swift */,
+				D62538CD24D6984C001AFA26 /* AnimalAction.swift */,
+			);
+			path = Actions;
+			sourceTree = "<group>";
+		};
+		D62538CB24D69803001AFA26 /* Reducers */ = {
+			isa = PBXGroup;
+			children = (
+				D61C8E6224D390F30021C2C7 /* AppReducer.swift */,
+				D62538CF24D69866001AFA26 /* AnimalReducer.swift */,
+			);
+			path = Reducers;
+			sourceTree = "<group>";
+		};
+		D62538CC24D69810001AFA26 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D61C8E4F24D390910021C2C7 /* ContentView.swift */,
+				D61C8E6424D3911D0021C2C7 /* AnimalView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D62538D124D700A3001AFA26 /* Middleware */ = {
+			isa = PBXGroup;
+			children = (
+				D62538D724D70127001AFA26 /* AnimalMiddleware.swift */,
+				D621EC8D24D785E8004B5E35 /* LogMiddleware.swift */,
+			);
+			path = Middleware;
+			sourceTree = "<group>";
+		};
+		D62538D424D700E0001AFA26 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				D62538D524D700F0001AFA26 /* AnimalService.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -155,10 +218,15 @@
 			files = (
 				D61C8E5D24D390B50021C2C7 /* AppState.swift in Sources */,
 				D61C8E5024D390910021C2C7 /* ContentView.swift in Sources */,
-				D61C8E6324D390F30021C2C7 /* Reducers.swift in Sources */,
+				D621EC8E24D785E8004B5E35 /* LogMiddleware.swift in Sources */,
+				D61C8E6324D390F30021C2C7 /* AppReducer.swift in Sources */,
 				D61C8E6124D390E30021C2C7 /* AppAction.swift in Sources */,
 				D61C8E6524D3911D0021C2C7 /* AnimalView.swift in Sources */,
+				D62538CE24D6984C001AFA26 /* AnimalAction.swift in Sources */,
 				D61C8E4E24D390910021C2C7 /* Redux_Architecture.swift in Sources */,
+				D62538D624D700F0001AFA26 /* AnimalService.swift in Sources */,
+				D62538D824D70127001AFA26 /* AnimalMiddleware.swift in Sources */,
+				D62538D024D69866001AFA26 /* AnimalReducer.swift in Sources */,
 				D61C8E5F24D390CE0021C2C7 /* AppStore.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

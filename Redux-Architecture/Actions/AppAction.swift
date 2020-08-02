@@ -8,5 +8,5 @@
 import Foundation
 
 enum AppAction {
-    case getAnimal
+    case animal(action: AnimalAction)
 }
