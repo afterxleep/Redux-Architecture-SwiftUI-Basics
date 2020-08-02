@@ -1,6 +1,6 @@
 //
-//  Redux_Architecture_Part1App.swift
-//  Redux-Architecture-Part1
+//  Redux_Architecture.swift
+//  Redux-Architecture
 //
 //  Created by Daniel Bernal on 7/30/20.
 //
@@ -8,7 +8,7 @@
 import SwiftUI
 
 @main
-struct Redux_Architecture_Part1App: App {
+struct Redux_Architecture: App {
     var body: some Scene {
         WindowGroup {
             ContentView()

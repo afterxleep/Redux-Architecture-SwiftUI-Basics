@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		D61C8E4E24D390910021C2C7 /* Redux_Architecture_Part1App.swift in Sources */ = {isa = PBXBuildFile; fileRef = D61C8E4D24D390910021C2C7 /* Redux_Architecture_Part1App.swift */; };
+		D61C8E4E24D390910021C2C7 /* Redux_Architecture.swift in Sources */ = {isa = PBXBuildFile; fileRef = D61C8E4D24D390910021C2C7 /* Redux_Architecture.swift */; };
 		D61C8E5024D390910021C2C7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D61C8E4F24D390910021C2C7 /* ContentView.swift */; };
 		D61C8E5224D390940021C2C7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D61C8E5124D390940021C2C7 /* Assets.xcassets */; };
 		D61C8E5524D390940021C2C7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D61C8E5424D390940021C2C7 /* Preview Assets.xcassets */; };
@@ -20,7 +20,7 @@
 
 /* Begin PBXFileReference section */
 		D61C8E4A24D390910021C2C7 /* Redux-Architecture-Part1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Redux-Architecture-Part1.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		D61C8E4D24D390910021C2C7 /* Redux_Architecture_Part1App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Redux_Architecture_Part1App.swift; sourceTree = "<group>"; };
+		D61C8E4D24D390910021C2C7 /* Redux_Architecture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Redux_Architecture.swift; sourceTree = "<group>"; };
 		D61C8E4F24D390910021C2C7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		D61C8E5124D390940021C2C7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D61C8E5424D390940021C2C7 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -46,7 +46,7 @@
 		D61C8E4124D390910021C2C7 = {
 			isa = PBXGroup;
 			children = (
-				D61C8E4C24D390910021C2C7 /* Redux-Architecture-Part1 */,
+				D61C8E4C24D390910021C2C7 /* Redux-Architecture */,
 				D61C8E4B24D390910021C2C7 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -59,10 +59,10 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		D61C8E4C24D390910021C2C7 /* Redux-Architecture-Part1 */ = {
+		D61C8E4C24D390910021C2C7 /* Redux-Architecture */ = {
 			isa = PBXGroup;
 			children = (
-				D61C8E4D24D390910021C2C7 /* Redux_Architecture_Part1App.swift */,
+				D61C8E4D24D390910021C2C7 /* Redux_Architecture.swift */,
 				D61C8E4F24D390910021C2C7 /* ContentView.swift */,
 				D61C8E5124D390940021C2C7 /* Assets.xcassets */,
 				D61C8E5624D390940021C2C7 /* Info.plist */,
@@ -73,7 +73,7 @@
 				D61C8E6224D390F30021C2C7 /* Reducers.swift */,
 				D61C8E6424D3911D0021C2C7 /* AnimalView.swift */,
 			);
-			path = "Redux-Architecture-Part1";
+			path = "Redux-Architecture";
 			sourceTree = "<group>";
 		};
 		D61C8E5324D390940021C2C7 /* Preview Content */ = {
@@ -118,7 +118,7 @@
 					};
 				};
 			};
-			buildConfigurationList = D61C8E4524D390910021C2C7 /* Build configuration list for PBXProject "Redux-Architecture-Part1" */;
+			buildConfigurationList = D61C8E4524D390910021C2C7 /* Build configuration list for PBXProject "Redux-Architecture" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -158,7 +158,7 @@
 				D61C8E6324D390F30021C2C7 /* Reducers.swift in Sources */,
 				D61C8E6124D390E30021C2C7 /* AppAction.swift in Sources */,
 				D61C8E6524D3911D0021C2C7 /* AnimalView.swift in Sources */,
-				D61C8E4E24D390910021C2C7 /* Redux_Architecture_Part1App.swift in Sources */,
+				D61C8E4E24D390910021C2C7 /* Redux_Architecture.swift in Sources */,
 				D61C8E5F24D390CE0021C2C7 /* AppStore.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -288,16 +288,16 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "\"Redux-Architecture-Part1/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"Redux-Architecture/Preview Content\"";
 				DEVELOPMENT_TEAM = JM9222EF99;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = "Redux-Architecture-Part1/Info.plist";
+				INFOPLIST_FILE = "Redux-Architecture/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.banshai.Redux-Architecture-Part1";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.banshai.Redux-Architecture";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -310,16 +310,16 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "\"Redux-Architecture-Part1/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"Redux-Architecture/Preview Content\"";
 				DEVELOPMENT_TEAM = JM9222EF99;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = "Redux-Architecture-Part1/Info.plist";
+				INFOPLIST_FILE = "Redux-Architecture/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.banshai.Redux-Architecture-Part1";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.banshai.Redux-Architecture";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -329,7 +329,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		D61C8E4524D390910021C2C7 /* Build configuration list for PBXProject "Redux-Architecture-Part1" */ = {
+		D61C8E4524D390910021C2C7 /* Build configuration list for PBXProject "Redux-Architecture" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D61C8E5724D390940021C2C7 /* Debug */,

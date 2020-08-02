@@ -1,6 +1,6 @@
 //
 //  AppReducers.swift
-//  Redux-Architecture-Part1
+//  Redux-Architecture
 //
 //  Created by Daniel Bernal on 7/30/20.
 //
